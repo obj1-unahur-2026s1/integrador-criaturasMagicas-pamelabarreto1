@@ -95,7 +95,7 @@ class LosCastillos inherits Area{
 
 class Colonia {
   const criaturas = [] //No necesita getter
-  
+  const property criaturas=[]
   method poderOfensivo() = criaturas.sum({ c => c.poderOfensivo() })
   method cantidadDeFormidables() = criaturas.count({ c => c.esFormidable() })
   method porcentajeQueQuitaAlSufrirDerrota() = 15 //Opcional, lo extraigo a método aparte para facilitar mantenimiento
